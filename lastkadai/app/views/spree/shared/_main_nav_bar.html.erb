@@ -1,0 +1,45 @@
+<nav class="navbar navbar-main navbar-default" role="navigation">
+    <div class="container">
+         <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+  <ul id="main-nav-bar" class="inline" data-hook>
+
+<%= link_to spree.root_path do %>
+  <%= image_tag "/assets/logo-986b71cbbd84f5bcd313bf6df7e348ce5802931703a8d6bfa3588cdfca164113.png" %>
+<% end %>
+  
+   
+
+  </ul>
+      </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <%= link_to 'Home',spree.root_path %>
+          </li>
+          <li class="dropdown megaDropMenu">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="300" data-close-others="true" aria-expanded="false">Shop</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+</nav>
+
+
+<script>
+$(function(){
+$('.navbar-toggle').click(function(){
+        $('.collapse.navbar-ex1-collapse').toggle();
+    });
+});
+
+
+</script>
